@@ -49,11 +49,10 @@ abstract class AbstractPresenter {
      * Return the paramater on the model if the method does not exist.
      * 
      * @return mixed
-     * /
+     */
     public function __call($method, $arguments)
     {
         return $this->model->{$method};   
-    }
     }
 
 }
